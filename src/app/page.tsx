@@ -50,7 +50,7 @@ const ALL_PRODUCTS: (Product & { superCategory: string; subCategory?: string; ha
   },
   {
     id: 's2', name: 'Finiya Ladoo', slug: 'finiya-ladoo', category_id: 's',
-    description: 'Delicate vermicelli ladoos made with roasted fine seviyan, pure ghee, and sugar. Light, aromatic, and irresistibly sweet.',
+    description: 'A traditional sweet delicately crafted by blending pure ghee and powdered sugar, then enriched with roasted wheat flour and aromatic cardamom for a rich, melt-in-the-mouth taste.',
     price: 700, image: '/images/finiya-ladoo.png', is_available: true, is_featured: true, weight: null,
     ingredients: 'Vermicelli, Ghee, Sugar, Cardamom, Dry Fruits', created_at: '2025-01-01', updated_at: '2025-01-01',
     categories: { id: 's', name: 'Sweet', slug: 'sweet', description: null, image: null, display_order: 1, created_at: '2025-01-01' },
