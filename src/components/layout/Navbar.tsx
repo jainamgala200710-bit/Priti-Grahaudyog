@@ -4,8 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useTheme } from 'next-themes';
-import { Menu, Sun, Moon, MessageCircle } from 'lucide-react';
+import { Menu, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
   Sheet,
@@ -21,7 +20,7 @@ export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
-  const { theme, setTheme } = useTheme();
+
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -36,9 +35,7 @@ export function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const toggleTheme = () => {
-    setTheme(theme === 'dark' ? 'light' : 'dark');
-  };
+
 
   return (
     <motion.header
@@ -98,41 +95,7 @@ export function Navbar() {
 
         {/* Right Actions */}
         <div className="flex items-center gap-2 md:gap-3">
-          {/* Dark Mode Toggle */}
-          {mounted && (
-            <motion.button
-              id="theme-toggle"
-              onClick={toggleTheme}
-              className="relative flex h-9 w-9 items-center justify-center rounded-full border border-border/50 bg-background/50 text-foreground/70 transition-colors hover:bg-accent hover:text-foreground"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              aria-label="Toggle dark mode"
-            >
-              <AnimatePresence mode="wait">
-                {theme === 'dark' ? (
-                  <motion.div
-                    key="sun"
-                    initial={{ rotate: -90, opacity: 0 }}
-                    animate={{ rotate: 0, opacity: 1 }}
-                    exit={{ rotate: 90, opacity: 0 }}
-                    transition={{ duration: 0.2 }}
-                  >
-                    <Sun className="h-4 w-4" />
-                  </motion.div>
-                ) : (
-                  <motion.div
-                    key="moon"
-                    initial={{ rotate: 90, opacity: 0 }}
-                    animate={{ rotate: 0, opacity: 1 }}
-                    exit={{ rotate: -90, opacity: 0 }}
-                    transition={{ duration: 0.2 }}
-                  >
-                    <Moon className="h-4 w-4" />
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </motion.button>
-          )}
+
 
           {/* Cart Drawer */}
           {mounted && <CartDrawer />}

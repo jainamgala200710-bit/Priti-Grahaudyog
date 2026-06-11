@@ -208,6 +208,9 @@ export function CartDrawer() {
             <p className="text-[10px] text-center text-muted-foreground">
               Your order will be summarized and sent as a single WhatsApp message to our team to finalize delivery and payment.
             </p>
+            <p className="text-[10px] text-center text-amber-500 font-semibold mt-1">
+              ⚠️ Note: No home delivery available. Pickup or Wefast delivery only.
+            </p>
           </div>
         )}
       </SheetContent>

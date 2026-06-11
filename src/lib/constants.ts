@@ -39,7 +39,6 @@ export const BUSINESS = {
 // Navigation Items
 export const NAV_ITEMS: NavItem[] = [
   { label: "Home", href: "/" },
-  { label: "Products", href: "/#categories" },
   { label: "About Us", href: "/about" },
   { label: "Why Choose Us", href: "/why-choose-us" },
   { label: "Testimonials", href: "/testimonials" },

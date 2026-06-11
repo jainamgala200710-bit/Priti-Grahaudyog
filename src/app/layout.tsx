@@ -6,6 +6,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { WhatsAppButton } from "@/components/layout/WhatsAppButton";
 import { Toaster } from "@/components/ui/sonner";
+import { CosmicBackground } from "@/components/shared/CosmicBackground";
 import { SEO, BUSINESS } from "@/lib/constants";
 import "./globals.css";
 import { cn } from "@/lib/utils";
@@ -84,13 +85,15 @@ export default function RootLayout({
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="light"
-          enableSystem
+          defaultTheme="dark"
+          forcedTheme="dark"
+          enableSystem={false}
           disableTransitionOnChange={false}
         >
           <CartProvider>
+            <CosmicBackground />
             <Navbar />
-            <main className="flex-1">{children}</main>
+            <main className="flex-1 content">{children}</main>
             <Footer />
             <WhatsAppButton />
             <Toaster />

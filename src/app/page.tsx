@@ -169,7 +169,7 @@ const ALL_PRODUCTS: (Product & { superCategory: string; subCategory?: string; ha
   {
     id: 'n9', name: 'Maida Puri', slug: 'maida-puri', category_id: 'n',
     description: 'Flaky, golden deep-fried flour puris with a delicate, melt-in-mouth texture. Lightly seasoned with ajwain seeds.',
-    price: null, image: '/images/maida-puri.png', is_available: true, is_featured: false, weight: null,
+    price: null, image: '/images/maida-puri-fresh.jpg', is_available: true, is_featured: false, weight: null,
     ingredients: 'Maida (Refined Flour), Ajwain, Oil, Salt', created_at: '2025-01-01', updated_at: '2025-01-01',
     categories: { id: 'n', name: 'Namkeen', slug: 'namkeen', description: null, image: null, display_order: 1, created_at: '2025-01-01' },
     superCategory: 'namkeen', hasWeightSelector: true,
@@ -193,7 +193,7 @@ const ALL_PRODUCTS: (Product & { superCategory: string; subCategory?: string; ha
   {
     id: 'n12', name: 'Gathiya', slug: 'gathiya', category_id: 'n',
     description: 'Traditional Gujarati gathiya made fresh daily. Thick, crunchy strands of besan goodness with perfect seasoning.',
-    price: null, image: '/images/gathiya-fresh.png', is_available: true, is_featured: true, weight: null,
+    price: null, image: '/images/gathiya-fresh.jpg', is_available: true, is_featured: true, weight: null,
     ingredients: 'Besan, Ajwain, Salt, Oil', created_at: '2025-01-01', updated_at: '2025-01-01',
     categories: { id: 'n', name: 'Namkeen', slug: 'namkeen', description: null, image: null, display_order: 1, created_at: '2025-01-01' },
     superCategory: 'namkeen', hasWeightSelector: true,
@@ -201,7 +201,7 @@ const ALL_PRODUCTS: (Product & { superCategory: string; subCategory?: string; ha
   {
     id: 'n13', name: 'Tikha Sev', slug: 'tikha-sev', category_id: 'n',
     description: 'Spicy thin sev made with finest besan and a fiery blend of red chilli and pepper. A crunchy, addictive classic.',
-    price: null, image: '/images/spicy-sev.png', is_available: true, is_featured: false, weight: null,
+    price: null, image: '/images/tikha-sev-fresh.jpg', is_available: true, is_featured: false, weight: null,
     ingredients: 'Besan, Red Chilli, Pepper, Spices, Oil, Salt', created_at: '2025-01-01', updated_at: '2025-01-01',
     categories: { id: 'n', name: 'Namkeen', slug: 'namkeen', description: null, image: null, display_order: 1, created_at: '2025-01-01' },
     superCategory: 'namkeen', hasWeightSelector: true,
@@ -215,17 +215,17 @@ const ALL_PRODUCTS: (Product & { superCategory: string; subCategory?: string; ha
     superCategory: 'namkeen', hasWeightSelector: true,
   },
   {
-    id: 'n16', name: 'Mithi Puri', slug: 'mithi-puri', category_id: 'n',
+    id: 'n16', name: 'Jaggery Puri', slug: 'jaggery-puri', category_id: 'n',
     description: 'Sweet and crispy miniature puris with a hint of jaggery and cardamom. A delightful mix of sweet and savoury.',
-    price: null, image: '/images/mithi-puri.png', is_available: true, is_featured: false, weight: null,
+    price: null, image: '/images/jaggery-puri.jpg', is_available: true, is_featured: false, weight: null,
     ingredients: 'Wheat Flour, Jaggery, Cardamom, Oil, Salt', created_at: '2025-01-01', updated_at: '2025-01-01',
     categories: { id: 'n', name: 'Namkeen', slug: 'namkeen', description: null, image: null, display_order: 1, created_at: '2025-01-01' },
     superCategory: 'namkeen', hasWeightSelector: true,
   },
   {
-    id: 'n17', name: 'Matki Puri', slug: 'matki-puri', category_id: 'n',
-    description: 'Exquisite matki (moth bean) flour puris, hand-rolled and crisped to perfection. Premium taste with rich traditional spices.',
-    price: null, image: '/images/matki-puri.png', is_available: true, is_featured: true, weight: null,
+    id: 'n17', name: 'Chora Fari', slug: 'chora-fari', category_id: 'n',
+    description: 'Exquisite moth bean (chora) flour strips, hand-rolled and crisped to perfection. Premium taste with rich traditional spices.',
+    price: null, image: '/images/chora-fari-fresh.jpg', is_available: true, is_featured: true, weight: null,
     ingredients: 'Matki Flour, Gram Flour, Red Chili, Spices, Oil, Salt', created_at: '2025-01-01', updated_at: '2025-01-01',
     categories: { id: 'n', name: 'Namkeen', slug: 'namkeen', description: null, image: null, display_order: 1, created_at: '2025-01-01' },
     superCategory: 'namkeen', hasWeightSelector: true,
@@ -234,7 +234,7 @@ const ALL_PRODUCTS: (Product & { superCategory: string; subCategory?: string; ha
   {
     id: 'p27', name: 'Paneer Butter Masala', slug: 'paneer-butter-masala-party', category_id: 'p',
     description: 'Classic rich and creamy Punjabi dish featuring tender paneer cubes cooked in a mildly sweet, buttery tomato gravy.',
-    price: 800, image: '/images/paneer-tikka-masala.png', is_available: true, is_featured: false, weight: null,
+    price: 800, image: '/images/paneer-butter-masala.jpg', is_available: true, is_featured: false, weight: null,
     ingredients: 'Paneer, Butter, Cashews, Cream, Tomatoes, Mild Spices', created_at: '2026-06-08', updated_at: '2026-06-08',
     categories: { id: 'p', name: 'Party Orders & Catering', slug: 'party-menu', description: null, image: null, display_order: 3, created_at: '2026-06-08' },
     superCategory: 'party-menu', subCategory: 'punjabi-sabji', hasWeightSelector: true,
@@ -260,7 +260,7 @@ const ALL_PRODUCTS: (Product & { superCategory: string; subCategory?: string; ha
   {
     id: 'p29', name: 'Paneer Lababdar', slug: 'paneer-lababdar-party', category_id: 'p',
     description: 'Delectable, rich paneer curry prepared with onions, tomatoes, cashews, and a unique blend of aromatic herbs and grated paneer.',
-    price: 800, image: '/images/paneer-tikka-masala.png', is_available: true, is_featured: false, weight: null,
+    price: 800, image: '/images/paneer-lababdar.jpg', is_available: true, is_featured: false, weight: null,
     ingredients: 'Paneer, Grated Paneer, Cashews, Cream, Tomatoes, Spices, Herbs', created_at: '2026-06-08', updated_at: '2026-06-08',
     categories: { id: 'p', name: 'Party Orders & Catering', slug: 'party-menu', description: null, image: null, display_order: 3, created_at: '2026-06-08' },
     superCategory: 'party-menu', subCategory: 'punjabi-sabji', hasWeightSelector: true,
@@ -325,7 +325,7 @@ const ALL_PRODUCTS: (Product & { superCategory: string; subCategory?: string; ha
   {
     id: 'p7', name: 'Dahi Vada', slug: 'dahi-vada-party', category_id: 'p',
     description: 'Soft lentil dumplings soaked in sweet yogurt, drizzled with tangy tamarind chutney, spicy green chutney, and roasted cumin powder.',
-    price: 150, image: '/images/medu-vada-catering.png', is_available: true, is_featured: false, weight: null,
+    price: 150, image: '/images/dahi-vada-fresh.jpg', is_available: true, is_featured: false, weight: null,
     ingredients: 'Urad Dal, Yogurt, Spices, Tamarind, Mint, Pomegranate', created_at: '2026-06-08', updated_at: '2026-06-08',
     categories: { id: 'p', name: 'Party Orders & Catering', slug: 'party-menu', description: null, image: null, display_order: 3, created_at: '2026-06-08' },
     superCategory: 'party-menu', subCategory: 'chaat-snacks', hasPieceSelector: true,
@@ -346,6 +346,32 @@ const ALL_PRODUCTS: (Product & { superCategory: string; subCategory?: string; ha
     variantOptions: [
       { label: 'Regular', price: 600 },
       { label: 'Jain', price: 600 },
+    ],
+  },
+  {
+    id: 'p31', name: 'Mini Masala Idli', slug: 'mini-masala-idli-party', category_id: 'p',
+    description: 'Soft, bite-sized mini idlis tossed in aromatic gunpowder podi masala, ghee, mustard seeds, and fresh curry leaves.',
+    price: 600, image: '/images/mini-masala-idli.jpg', is_available: true, is_featured: false, weight: null,
+    ingredients: 'Rice, Urad Dal, Gunpowder Masala (Podi), Ghee, Mustard Seeds, Curry Leaves', created_at: '2026-06-11', updated_at: '2026-06-11',
+    categories: { id: 'p', name: 'Party Orders & Catering', slug: 'party-menu', description: null, image: null, display_order: 3, created_at: '2026-06-08' },
+    superCategory: 'party-menu', subCategory: 'special-items', hasWeightSelector: true,
+    weightOptions: ['1kg', '2kg', '3kg', '5kg'], specialTag: 'Spicy & Tiny',
+    variantOptions: [
+      { label: 'Regular', price: 600 },
+      { label: 'Jain', price: 600 },
+    ],
+  },
+  {
+    id: 'p32', name: 'Mini Curd Idli', slug: 'mini-curd-idli-party', category_id: 'p',
+    description: 'Miniature soft idlis soaked in sweet, chilled spiced yogurt, tempered with crackling mustard seeds, curry leaves, and coriander.',
+    price: 700, image: '/images/mini-curd-idli.jpg', is_available: true, is_featured: false, weight: null,
+    ingredients: 'Rice, Urad Dal, Yogurt, Mustard Seeds, Curry Leaves, Ginger, Spices, Coriander', created_at: '2026-06-11', updated_at: '2026-06-11',
+    categories: { id: 'p', name: 'Party Orders & Catering', slug: 'party-menu', description: null, image: null, display_order: 3, created_at: '2026-06-08' },
+    superCategory: 'party-menu', subCategory: 'special-items', hasWeightSelector: true,
+    weightOptions: ['1kg', '2kg', '3kg', '5kg'], specialTag: 'Cooling Delight',
+    variantOptions: [
+      { label: 'Regular', price: 700 },
+      { label: 'Jain', price: 700 },
     ],
   },
   {
@@ -386,7 +412,7 @@ const ALL_PRODUCTS: (Product & { superCategory: string; subCategory?: string; ha
   {
     id: 'p13', name: 'Dal Khichdi', slug: 'dal-khichdi-party', category_id: 'p',
     description: 'Wholesome and comforting rice and yellow lentil khichdi tempered with ghee, cumin, and garlic. Simple yet satisfying.',
-    price: 600, image: '/images/veg-pulao-catering.png', is_available: true, is_featured: false, weight: null,
+    price: 600, image: '/images/dal-khichdi-fresh-v2.jpg', is_available: true, is_featured: false, weight: null,
     ingredients: 'Rice, Toor Dal, Ghee, Garlic, Spices, Turmeric', created_at: '2026-06-08', updated_at: '2026-06-08',
     categories: { id: 'p', name: 'Party Orders & Catering', slug: 'party-menu', description: null, image: null, display_order: 3, created_at: '2026-06-08' },
     superCategory: 'party-menu', subCategory: 'rice-khichdi', hasWeightSelector: true,
@@ -451,7 +477,7 @@ const ALL_PRODUCTS: (Product & { superCategory: string; subCategory?: string; ha
   {
     id: 'p18', name: 'Dum Biryani', slug: 'dum-biryani-party', category_id: 'p',
     description: 'Slow-cooked (dum) traditional vegetable biryani baked inside a sealed clay container to seal in all the rich aromas and spices.',
-    price: 850, image: '/images/veg-pulao-catering.png', is_available: true, is_featured: true, weight: null,
+    price: 850, image: '/images/dum-biryani-fresh.jpg', is_available: true, is_featured: true, weight: null,
     ingredients: 'Basmati Rice, Mixed Vegetables, Fried Onions, Saffron, Ghee, Mint, Dum Masala', created_at: '2026-06-08', updated_at: '2026-06-08',
     categories: { id: 'p', name: 'Party Orders & Catering', slug: 'party-menu', description: null, image: null, display_order: 3, created_at: '2026-06-08' },
     superCategory: 'party-menu', subCategory: 'rice-khichdi', hasWeightSelector: true,
@@ -526,6 +552,7 @@ const ALL_PRODUCTS: (Product & { superCategory: string; subCategory?: string; ha
       { label: 'Jain', price: 300 },
     ],
   },
+
   {
     id: 'p24', name: 'Thepla', slug: 'thepla-party', category_id: 'p',
     description: 'Soft, spiced Indian flatbreads made with whole wheat flour, fresh fenugreek leaves (methi), and traditional spices.',
@@ -533,7 +560,7 @@ const ALL_PRODUCTS: (Product & { superCategory: string; subCategory?: string; ha
     ingredients: 'Whole Wheat Flour, Fenugreek Leaves, Spices, Yogurt, Oil', created_at: '2026-06-08', updated_at: '2026-06-08',
     categories: { id: 'p', name: 'Party Orders & Catering', slug: 'party-menu', description: null, image: null, display_order: 3, created_at: '2026-06-08' },
     superCategory: 'party-menu', subCategory: 'breads', hasPieceSelector: true,
-    pieceOptions: ['20 Pieces', '40 Pieces', '60 Pieces'], specialTag: 'Traditional',
+    pieceOptions: ['10 Pieces', '20 Pieces', '40 Pieces'], specialTag: 'Traditional',
   },
   {
     id: 'p25', name: 'Chapati', slug: 'chapati-party', category_id: 'p',
@@ -557,10 +584,12 @@ const ALL_PRODUCTS: (Product & { superCategory: string; subCategory?: string; ha
   let price = p.price;
   if (price === null) {
     if (p.superCategory === 'namkeen') {
-      if (p.slug === 'matki-puri' || p.slug === 'dry-fruit-makhana-bhel') {
+      if (p.slug === 'dry-fruit-makhana-bhel') {
         price = 600;
-      } else {
+      } else if (p.slug === 'chora-fari') {
         price = 550;
+      } else {
+        price = 500;
       }
     } else {
       price = 150;
@@ -1445,6 +1474,14 @@ export default function Home() {
         className="relative py-16 md:py-24 bg-background scroll-mt-20 border-t border-border/40"
       >
         <div className="container mx-auto px-4 md:px-6">
+          {/* General Shipping/Delivery Notice */}
+          <div className="max-w-4xl mx-auto mb-10 overflow-hidden rounded-2xl border border-amber-500/30 bg-amber-500/5 backdrop-blur-md p-4 shadow-sm relative text-center animate-fade-in">
+            <div className="relative z-10 flex flex-col sm:flex-row items-center justify-center gap-3 text-amber-300 font-semibold text-sm md:text-base">
+              <Truck className="h-6 w-6 text-amber-500 animate-pulse shrink-0" />
+              <span>📢 Important: No Home Delivery Available. Self-Pickup or Wefast Delivery options only.</span>
+            </div>
+          </div>
+
           {/* Section heading & Category selector tabs */}
           <div className="text-center mb-10">
             <h2 className="font-[family-name:var(--font-heading)] text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
