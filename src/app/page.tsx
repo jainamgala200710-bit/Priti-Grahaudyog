@@ -338,14 +338,14 @@ const ALL_PRODUCTS: (Product & { superCategory: string; subCategory?: string; ha
   {
     id: 'p33', name: 'Dabeli', slug: 'dabeli-party', category_id: 'p',
     description: 'A legendary street food snack! Spicy, tangy potato mixture stuffed inside fresh buns (pav), garnished with masala peanuts, sweet pomegranate seeds, coriander, and crispy sev.',
-    price: 120, image: '/images/dabeli-catering.jpg', is_available: true, is_featured: true, weight: null,
+    price: 40, image: '/images/dabeli-catering.jpg', is_available: true, is_featured: true, weight: null,
     ingredients: 'Pav (Buns), Potatoes, Special Dabeli Masala, Masala Peanuts, Pomegranate, Sev, Sweet Tamarind Chutney', created_at: '2026-06-18', updated_at: '2026-06-18',
     categories: { id: 'p', name: 'Party Orders & Catering', slug: 'party-menu', description: null, image: null, display_order: 3, created_at: '2026-06-08' },
     superCategory: 'party-menu', subCategory: 'chaat-snacks', hasPieceSelector: true,
     pieceOptions: ['10 Pieces', '20 Pieces', '40 Pieces'], specialTag: 'Street Special',
     variantOptions: [
-      { label: 'Regular', price: 120 },
-      { label: 'Jain', price: 130 },
+      { label: 'Regular', price: 40 },
+      { label: 'Jain', price: 50 },
     ],
   },
   {
