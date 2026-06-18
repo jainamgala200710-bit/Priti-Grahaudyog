@@ -336,6 +336,19 @@ const ALL_PRODUCTS: (Product & { superCategory: string; subCategory?: string; ha
     ],
   },
   {
+    id: 'p33', name: 'Dabeli', slug: 'dabeli-party', category_id: 'p',
+    description: 'A legendary street food snack! Spicy, tangy potato mixture stuffed inside fresh buns (pav), garnished with masala peanuts, sweet pomegranate seeds, coriander, and crispy sev.',
+    price: 120, image: '/images/dabeli-catering.jpg', is_available: true, is_featured: true, weight: null,
+    ingredients: 'Pav (Buns), Potatoes, Special Dabeli Masala, Masala Peanuts, Pomegranate, Sev, Sweet Tamarind Chutney', created_at: '2026-06-18', updated_at: '2026-06-18',
+    categories: { id: 'p', name: 'Party Orders & Catering', slug: 'party-menu', description: null, image: null, display_order: 3, created_at: '2026-06-08' },
+    superCategory: 'party-menu', subCategory: 'chaat-snacks', hasPieceSelector: true,
+    pieceOptions: ['10 Pieces', '20 Pieces', '40 Pieces'], specialTag: 'Street Special',
+    variantOptions: [
+      { label: 'Regular', price: 120 },
+      { label: 'Jain', price: 130 },
+    ],
+  },
+  {
     id: 'p8', name: 'Chilly Milly Idli', slug: 'chilly-milly-idli-party', category_id: 'p',
     description: 'Tangy and spicy fusion dish of mini idlis tossed with colorful bell peppers, green chillies, and custom sauces. A modern starter.',
     price: 600, image: '/images/chilly-milly-idli.png', is_available: true, is_featured: false, weight: null,
@@ -584,12 +597,10 @@ const ALL_PRODUCTS: (Product & { superCategory: string; subCategory?: string; ha
   let price = p.price;
   if (price === null) {
     if (p.superCategory === 'namkeen') {
-      if (p.slug === 'dry-fruit-makhana-bhel') {
-        price = 600;
-      } else if (p.slug === 'chora-fari') {
-        price = 550;
+      if (p.slug === 'dry-fruit-makhana-bhel' || p.slug === 'chora-fari') {
+        price = 800;
       } else {
-        price = 500;
+        price = 600;
       }
     } else {
       price = 150;
